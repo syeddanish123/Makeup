@@ -115,22 +115,90 @@
             max-width: 500px;
             height: auto;
         }
+
+           * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Header Styling */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #f8f8f8;
+        text-align: center;
+    }
+
+    .header-content h1 {
+        font-size: 2.5rem;
+        color: #333;
+    }
+
+    .header-content h1 span {
+        color: #a64ca6; /* Accent color */
+    }
+
+    .header-content p {
+        font-size: 1.2rem;
+        color: #666;
+        margin-top: 8px;
+    }
+
+    /* Navigation Menu Styling */
+    .nav-menu ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .nav-menu ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition: background 0.3s ease;
+    }
+
+    .nav-menu ul li a:hover {
+        background-color: #a64ca6;
+        color: #fff;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .header-content h1 {
+            font-size: 2rem;
+        }
+        .nav-menu ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Welcome to Sana's Makeup Studio</h1>
-        <p>Professional Makeup Services for All Occasions</p>
-        <nav>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
-            <a href="#video">Video</a>
-        </nav>
-    </header>
+   <header>
+    <div class="header-content">
+        <h1>Welcome to <span>Sana's Makeup Studio</span></h1>
+        <p>Your Destination for Professional Makeup Services</p>
+    </div>
+    <nav aria-label="Main Navigation" class="nav-menu">
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#video">Video</a></li>
+        </ul>
+    </nav>
+</header>
 
     <section id="services" class="container mt-5">
         <h2 class="text-center">Our Services</h2>
@@ -147,13 +215,8 @@
             </div>
             <div class="col-md-3">
                 <i class="fas fa-camera fa-3x mb-3"></i>
-                <h4>Editorial Makeup</h4>
+                <h4>Pakistani Makeup</h4>
                 <p>Achieve a high-fashion look with our editorial makeup services.</p>
-            </div>
-            <div class="col-md-3">
-                <i class="fas fa-graduation-cap fa-3x mb-3"></i>
-                <h4>Makeup Workshops</h4>
-                <p>Join our workshops to learn the art of makeup from professionals.</p>
             </div>
         </div>
     </section>
