@@ -35,6 +35,12 @@
             color: #6c757d;
         }
 
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
         nav a {
             margin: 0 15px;
             color: #007bff;
@@ -70,6 +76,20 @@
             margin: 0;
         }
 
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        footer .social-icons i {
+            color: #fff;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons i:hover {
+            color: #007bff;
+        }
+
         .highlight {
             font-size: 1.5rem;
             color: #007bff;
@@ -78,10 +98,22 @@
         .contact-info {
             font-size: 1.2rem;
             margin-bottom: 20px;
+            text-align: left; /* Aligns the text to the left */
         }
 
         .form-group label {
             font-weight: 500;
+        }
+
+        .btn-primary {
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+        }
+
+        video {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
         }
     </style>
 </head>
@@ -130,25 +162,25 @@
         <h2 class="text-center">Our Portfolio</h2>
         <div class="row mt-4 gallery">
             <div class="col-md-4">
-                <img src="makeup-look-1.jpg" alt="Makeup Look 1">
+                <img src="images/makeup-look-1.jpg" alt="Bridal makeup with soft, natural tones">
             </div>
             <div class="col-md-4">
-                <img src="makeup-look-2.jpg" alt="Makeup Look 2">
+                <img src="images/makeup-look-2.jpg" alt="Party makeup with bold, vibrant colors">
             </div>
             <div class="col-md-4">
-                <img src="makeup-look-3.jpg" alt="Makeup Look 3">
+                <img src="images/makeup-look-3.jpg" alt="Editorial makeup with dramatic, high-fashion look">
             </div>
             <div class="col-md-4">
-                <img src="makeup-look-4.jpg" alt="Makeup Look 4">
+                <img src="images/makeup-look-4.jpg" alt="Elegant makeup look for evening events">
             </div>
             <div class="col-md-4">
-                <img src="makeup-look-5.jpg" alt="Makeup Look 5">
+                <img src="images/makeup-look-5.jpg" alt="Natural and glowing everyday makeup">
             </div>
             <div class="col-md-4">
-                <img src="makeup-look-6.jpg" alt="Makeup Look 6">
+                <img src="images/makeup-look-6.jpg" alt="Classic bridal look with defined eyes">
             </div>
             <div class="col-md-4">
-                <img src="makeup-look-7.jpg" alt="Makeup Look 7">
+                <img src="images/makeup-look-7.jpg" alt="Soft glam makeup for daytime events">
             </div>
         </div>
     </section>
@@ -179,19 +211,19 @@
 
     <section id="contact" class="container mt-5">
         <h2 class="text-center">Contact Us</h2>
-        <div class="text-center mb-3 contact-info">
+        <div class="text-left mb-3 contact-info">
             <p><span class="highlight">Name:</span> Sana Khan</p>
             <p><span class="highlight">Mobile:</span> 8329611104</p>
             <p><span class="highlight">Address:</span> Makeup by Sana, Near Noor Tower, Ganganagar, Akola, Maharashtra 444002</p>
         </div>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="post" class="mx-auto" style="max-width: 600px;">
+        <form action="https://formspree.io/f/mjkvgzqy" method="POST" class="mx-auto" style="max-width: 600px;">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" class="form-control" id="name" name="name" required>
             </div>
             <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <label for="mobile">Mobile No:</label>
+                <input type="tel" class="form-control" id="mobile" name="mobile" required>
             </div>
             <div class="form-group">
                 <label for="message">Message:</label>
@@ -200,21 +232,3 @@
             <button type="submit" class="btn btn-primary btn-block">Submit</button>
         </form>
     </section>
-
-    <section id="video" class="container mt-5">
-        <h2 class="text-center">Watch Our Work</h2>
-        <div class="text-center">
-            <video width="200" height="350" controls>
-                <source src="videos/video.mp4" type="video/mp4">
-                <source src="videos/your-video-file.webm" type="video/webm">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Sana's Makeup Studio. All Rights Reserved.</p>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.
